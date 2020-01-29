@@ -19,6 +19,6 @@
   "scripts": {
     "test": "mocha",
     "test-min": "clear && ./node_modules/.bin/mocha --reporter=min --bail",
-    "watch": "./node_modules/.bin/onchange 'exercises/*.js' --initial -- npm run test-min -s"
+    "watch": "npx run onchange 'exercises/*.js' --initial -- npm run test-min -s"
   }
 }

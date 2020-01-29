@@ -10,18 +10,18 @@
 
 function threeFruits () {
   const fruits = ['Apple', 'Banana', 'Cherry']
-
+return fruits
 }
-
+threeFruits()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // An Array can contain multiple types. ie: strings, numbers, boolean, etc
 // Return the array of values in the function below.
 
 function multipleTypes () {
   const diverseArray = ['Skateboard', null, 8.75, 'Eiffel Tower', 44, 7, true, null]
-
+return diverseArray
 }
-
+multipleTypes()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can access individual values of an array using bracket notation shown below.
 // Remember that arrays start at index 0. So for an array "myArray" the *first* item can
@@ -39,36 +39,40 @@ function indexAccess () {
   console.assert(people[4] === 'Julia')
 
   // return the third item from the "people" array here
-
+  return people[2]
 }
-
+indexAccess()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Use the .length property to see the length of an array.
 // Return the length of array "arr" below.
 
 function useLength () {
   const arr = ['a', 'b', 'c']
-
+    return arr.length
 }
+useLength()
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Add to the end of an array using the .push() method
 // Add the string "d" to the array below and return the array.
 
 function usePush () {
-  let arr = ['a', 'b', 'c']
-
+  let arr1 = ['a', 'b', 'c']
+    arr1.push("d")
+    return arr1
 }
-
+usePush()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Remove from the end of an array using the .pop() method
 // Remove the last element of the array below and return the array.
 
 function usePop () {
-  let arr = ['a', 'b', 'c']
-
+  let arr2 = ['a', 'b', 'c']
+    let lastLetter = arr2.pop()
+     console.log(`The letter, ${lastLetter} is mine :)`)
+    return arr2
 }
-
+usePop()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can search an array using the .indexOf() method
 // myArr.indexOf(<thing>) will return the first index of <thing> in myArr, or
@@ -84,9 +88,9 @@ function useIndexOf () {
   console.assert(arr.indexOf('Z') === -1) // no "Z" in this array
 
   // return the index of the first instance of "T" here
-
+return arr.indexOf("T")
 }
-
+useIndexOf()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Convert an Array into a string using .join()
 // Return the string 'a-b-c-d-e-f' using .join() below
@@ -100,9 +104,9 @@ function useJoin () {
   console.assert(arr.join('') === 'abcdef') // pass an empty string to have no separator
 
   // create and return the string 'a-b-c-d-e-f' here
-
+return arr.join('-')
 }
-
+useJoin()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Let's play with the alphabet using some Array and String methods.
 //

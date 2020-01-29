@@ -10,18 +10,18 @@
 
 function threeNumbers () {
   const numbers = { numberOne: 1, numberTwo: 2, numberThree: 3 }
-
+return numbers
 }
-
+threeNumbers()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // An Object can contain any type for each property. ie: strings, numbers, boolean, etc
 // Return the object of values in the function below.
 
 function manyTypes () {
   const diverseObject = { name: 'banana', count: 42, isDelicious: true }
-
+ return diverseObject
 }
-
+manyTypes()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can access individual values of an object using bracket notation shown below.
 // This allows you to write the label (key) assigned to the value and get the value back.
@@ -39,9 +39,9 @@ function keyAccess () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // return the name of the bestFruit Object here.
-
+return bestFruit.name
 }
-
+keyAccess()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can add properties to an Object by assigning a value to a new key.
 // Add the property 'color' and assign it the string 'yellow' in the bestFruit object below.
@@ -56,9 +56,10 @@ function addKey () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
-
+bestFruit.color = "yellow"
+return bestFruit
 }
-
+addKey()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // When an Object gets large, it is normal to define its properties one-per-line as shown below.
 // Create your own object named bootcampStudent and give it 8 properties similar to
@@ -76,11 +77,23 @@ function largeObject () {
     pet: 'cat',
     ownsCar: true
   }
+  
 
   // create a bootcampStudent object here similar to bootcampInstructor and return it
-
+ const  bootcampStudent = {
+  name: 'James',
+  email: 'James@bootcamp.digitalcrafts',
+  age: 30,
+  heightFeet: 5.5,
+  favoriteColor: 'yellow',
+  homeTown: 'Houston',
+  pet: 'Dog',
+  ownsCar: false
+ } 
+return bootcampStudent
 }
 
+largeObject()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Objects aren't restricted to containing only JavaScript primitive types.
 // Remember, JavaScript primitive types include string, number, boolean, null...
@@ -102,9 +115,9 @@ function nestedArray () {
   console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
 
   // Return the second item of the nested array favoriteFoods
-
+return bootcampInstructor.favoriteFoods[1]
 }
-
+nestedArray()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // When working with Objects, it is most common to use the dot notation to access properties.
 // Bracket notation is more flexible, but dot notation is a more convenient, readable syntax.
@@ -138,5 +151,5 @@ function dotNotation () {
   console.assert(bootcampInstructor.favoriteFoods[0] === 'chicken pot pie')
 
   // Return the name of the bootcampInstructor Object using dot notation
-
+return bootcampInstructor.name
 }
