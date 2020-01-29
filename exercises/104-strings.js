@@ -4,17 +4,19 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "helloWorld"
 // 2) Return the string "Hello, world!"
-
-
+function helloWorld (){
+  return "Hello, world!"
+}
+helloWorld ()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "helloName" that accepts 1 parameter (arity of 1)
 // 2) Use the symbol "name" for the parameter name
 // 3) Return the string "Hello, <name>!" where <name> is the value passed to the function
 
 function helloName (name) {
-
+return `Hello, ${name}`
 }
-
+helloName ('Nader')
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Return the length of the string "tarPitAbstract" defined below.
 // HINT: use the .length method
@@ -25,8 +27,9 @@ function abstractLength () {
     'Following Brooks we distinguish accidental from essential difficulty, but disagree with his premise that most complexity remaining in contemporary systems is essential. ' +
     'We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. ' +
     'To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data.'
-
+return tarPitAbstract.length
 }
+abstractLength ()
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Return the string "chorus" in all capital letters.
@@ -35,9 +38,9 @@ function abstractLength () {
 
 function makeLoud () {
   const chorus = 'Who let the dogs out?'
-
+return chorus.toUpperCase()
 }
-
+makeLoud ()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Assume that a string is passed to the parameter "str" in the function below.
 // Return the value of "str" in all lower case letters.
@@ -45,5 +48,6 @@ function makeLoud () {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 
 function makeQuiet (str) {
-
+return str.toLowerCase()
 }
+makeQuiet ("Bambozel")
